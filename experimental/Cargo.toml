@@ -1,0 +1,25 @@
+[package]
+name = "experimental"
+version = "0.1.0"
+edition = "2021"
+
+[lints.rust]
+unused_imports = "allow"
+unused_variables = "allow"
+unused_mut = "allow"
+unused_unsafe = "allow"
+
+[dependencies]
+
+
+##//-> async
+tokio = { version = "1.16.1", features = ["full"] }
+tokio-util = "0.6.10"
+futures = "0.3.17"
+
+##//-> llm http ollama
+ollama-rs = "0.2.5"
+
+##//-> file system
+simple-fs = {version = "0.1.0", path = "../simple-fs"}
+fs_extra = "1.3"

@@ -1,8 +1,8 @@
 //"qwen2.5-coder:3b"
-
 use futures_util::pin_mut;
 use futures_util::stream::StreamExt;
 use rusty_ollama::{Ollama, OllamaError};
+
 #[tokio::main]
 async fn main() -> Result<(), OllamaError> {
     let mut ollama = Ollama::new("http://localhost:11434/api/generate", "qwen2.5-coder:3b")?;

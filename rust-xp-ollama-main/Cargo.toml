@@ -1,4 +1,3 @@
-workspace = { members = [ "experimental", "olla_tcp","ollama_websocket", "rusty_oll","tcp_ollama_server"] }
 [package]
 name = "xp-ollama"
 version = "0.1.0"
