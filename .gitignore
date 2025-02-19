@@ -9,3 +9,5 @@
 target/
 # !Cargo.lock # Commented by default
 !.cargo/
+*/target/
+*/.cargo/
