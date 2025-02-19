@@ -1,0 +1,1 @@
+curl -X POST http://192.168.178.56:11434/api/generate -H "Content-Type: application/json" -d '{"model": "deepseek-coder","prompt": "Was ist Rust?","stream": false}'

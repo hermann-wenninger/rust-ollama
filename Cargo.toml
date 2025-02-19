@@ -1,0 +1,24 @@
+workspace = { members = [ "olla_tcp","ollama_websocket", "rusty_oll","tcp_ollama_server"] }
+[package]
+name = "xp-ollama"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+license = "MIT OR Apache-2.0"
+
+[lints.rust]
+unsafe_code = "forbid"
+unused = { level = "allow", priority = -1 } # For exploratory dev.
+
+[dependencies]
+# -- Async
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+# -- Ollama
+ollama-rs = {version = "0.1", features = ["stream"]}
+# -- Files
+simple-fs = { version = "0.1", features = ["full"] }
+# -- Others
+derive_more = {version = "1.0.0-beta", features = ["from"] }
+
+
